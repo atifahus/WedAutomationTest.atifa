@@ -5,6 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Iterator;
@@ -142,8 +143,8 @@ public class BasePageObject {
 
     /** Drag 'from' element to 'to' element */
     protected void performDragAndDrop(By from, By to) {
-        // Actions action = new Actions(driver);
-        // action.dragAndDrop(find(from), find(to)).build().perform();
+         Actions action = new Actions(driver);
+        action.dragAndDrop(find(from), find(to)).build().perform();
 
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript(
@@ -171,6 +172,17 @@ public class BasePageObject {
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
     }
+
+    /** perform drop down select by value*/
+    protected void dropDownElementByValue(WebElement element, String value){
+        Select select=new Select(element);
+        select.selectByValue(value);
+    }
+    protected void dragAndDrop(By from, By to) {
+        Actions action = new Actions(driver);
+        action.dragAndDrop(find(from), find(to)).build().perform();
+    }
+
 
     /** Add cookie */
     public void setCookie(Cookie ck) {

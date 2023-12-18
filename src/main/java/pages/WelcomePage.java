@@ -11,6 +11,18 @@ public class WelcomePage extends BasePageObject {
 
     private By checkBoxLocator = By.linkText("Checkboxes");
 
+    private By hoversLinkLocator= By.linkText("Hovers");
+
+    private By dropDownLinkLocator= By.linkText("Dropdown");
+
+    private By dragDropLinkLocator= By.linkText("Drag and Drop");
+
+    private By basicAuthLinkLocator=By.linkText("Basic Auth");
+
+    private By addRemoveLinkLocator=By.linkText("Add/Remove Elements");
+
+
+
 
 
     public WelcomePage(WebDriver driver, Logger log){
@@ -21,10 +33,37 @@ public class WelcomePage extends BasePageObject {
         click(formAuthenticationLocator);
         return new LoginPage(driver, log);
     }
+    public AddRemoveElementPage clickAddRemoveLink(){
+        click(addRemoveLinkLocator);
+        return new AddRemoveElementPage(driver,log);
+    }
 
-   /* public CheckboxPage clickCheckboxesPage(){
+    public CheckBoxPage clickCheckboxesPage(){
         click(checkBoxLocator);
-        return new CheckboxPage(driver, log);
-    }*/
+        return new CheckBoxPage(driver, log);
+    }
+
+    public HoverPage clickHoverLink(){
+        click(hoversLinkLocator);
+        return new HoverPage(driver,log);
+    }
+
+    public DropDownPage clickDropDownLink(){
+        click(dropDownLinkLocator);
+        return new DropDownPage(driver,log);
+    }
+
+    public DragAndDropPage clickDragDropLink(){
+        click(dragDropLinkLocator);
+        return new DragAndDropPage(driver,log);
+    }
+
+    public BasicAuthPage clickBasicAuthLink(){
+        click(basicAuthLinkLocator);
+        return new BasicAuthPage(driver,log);
+    }
+
+
+
 
 }
