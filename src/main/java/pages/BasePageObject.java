@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class BasePageObject {
 
@@ -59,6 +60,10 @@ public class BasePageObject {
     /** Get title of current page */
     public String getCurrentPageTitle() {
         return driver.getTitle();
+    }
+
+    public String getCurrentHeader(By locator) {
+        return driver.findElement(locator).getText();
     }
 
     /** Get source of current page */
@@ -121,7 +126,6 @@ public class BasePageObject {
     protected void switchToFrame(By frameLocator) {
         driver.switchTo().frame(find(frameLocator));
     }
-
     /** Press Key on locator */
     protected void pressKey(By locator, Keys key) {
         find(locator).sendKeys(key);
@@ -196,5 +200,11 @@ public class BasePageObject {
         log.info("Getting value of cookie " + name);
         return driver.manage().getCookieNamed(name).getValue();
     }
+
+    public void addImplicitWait(long waitSeconds){
+
+        driver.manage().timeouts().implicitlyWait(waitSeconds, TimeUnit.SECONDS);
+    }
+
 
 }

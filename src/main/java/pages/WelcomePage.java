@@ -21,6 +21,11 @@ public class WelcomePage extends BasePageObject {
 
     private By addRemoveLinkLocator=By.linkText("Add/Remove Elements");
 
+    private By multipleWindowsLinkLocator=By.linkText("Multiple Windows");
+
+    private By nestedFramesLinkLocator=By.linkText("Nested Frames");
+
+    private By jSAlertLinkLocator=By.linkText("JavaScript Alerts");
 
 
 
@@ -62,6 +67,22 @@ public class WelcomePage extends BasePageObject {
         click(basicAuthLinkLocator);
         return new BasicAuthPage(driver,log);
     }
+
+    public MultipleWindowsPage clickMultipleWindowsLink(){
+        click(multipleWindowsLinkLocator);
+        return new MultipleWindowsPage(driver,log);
+    }
+
+    public NestedFramesPage clickNestedFramesLink(){
+        click(nestedFramesLinkLocator);
+        return new NestedFramesPage(driver,log);
+    }
+
+    public JavaScriptAlertPage clickJavaScriptAlertsLink(){
+        click(jSAlertLinkLocator);
+        return new JavaScriptAlertPage(driver,log);
+    }
+
 
 
 

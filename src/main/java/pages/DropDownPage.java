@@ -13,6 +13,7 @@ public class DropDownPage extends BasePageObject{
         super(driver, log);
     }
     public void selectDropDown(){
+
         dropDownElementByValue(option1,"1");
     }
 }

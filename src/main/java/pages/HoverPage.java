@@ -15,7 +15,9 @@ public class HoverPage extends BasePageObject{
 
 
 
+
     public HoverPage(WebDriver driver, Logger log) {
+
         super(driver, log);
     }
     public void hoverOverOnFirstPic(){

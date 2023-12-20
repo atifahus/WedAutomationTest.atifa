@@ -26,7 +26,7 @@ public class AddRemoveElementTest extends TestUtilities {
         Assert.assertEquals(driver.findElement(By.tagName("button")).getText(),"Add Element");
 
         addRemove.clickAddElement();
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='content']/div/div/button")).getText(),"Delete");
+        Assert.assertEquals(addRemove.getDeleteHeader(),"Delete");
 
         addRemove.clickDeleteElemt();
 

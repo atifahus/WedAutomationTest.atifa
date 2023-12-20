@@ -6,11 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="64714491-ffba-4753-a8cf-d0a0da1372c8" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../HTML_Code/.idea/HTML_Code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AddRemoveElementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AddRemoveElementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasicAuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasicAuthPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckBoxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HoverPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HoverPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageTests/AddRemoveElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageTests/AddRemoveElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageTests/BasicAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageTests/BasicAuthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources/dataproviders/NegativeLogInUsingCsvTests/NegativeLogInIUsingCsvTests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddRemoveElementTest.validateAddRemoveElement">
+  <component name="RunManager" selected="TestNG.JavaScriptAlertsTest.validateJavaScriptAlerts">
     <configuration name="AddRemoveElementTest.validateAddRemoveElement" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebAutomationTest" />
       <extension name="coverage">
@@ -70,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicAuthTest.valiudateBasicAuth" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JavaScriptAlertsTest.validateJavaScriptAlerts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebAutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +85,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pageTests" />
-      <option name="MAIN_CLASS_NAME" value="pageTests.BasicAuthTest" />
-      <option name="METHOD_NAME" value="valiudateBasicAuth" />
+      <option name="MAIN_CLASS_NAME" value="pageTests.JavaScriptAlertsTest" />
+      <option name="METHOD_NAME" value="validateJavaScriptAlerts" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -88,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DragAndDropTest.validateDragDropTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MultipleWindowsTest.validateMultipleWindowsHandle" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebAutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +103,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pageTests" />
-      <option name="MAIN_CLASS_NAME" value="pageTests.DragAndDropTest" />
-      <option name="METHOD_NAME" value="validateDragDropTest" />
+      <option name="MAIN_CLASS_NAME" value="pageTests.MultipleWindowsTest" />
+      <option name="METHOD_NAME" value="validateMultipleWindowsHandle" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -106,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DropDownTest.validateDropDownTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NestedFramesTest.validateNestedFrames" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebAutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -115,8 +121,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pageTests" />
-      <option name="MAIN_CLASS_NAME" value="pageTests.DropDownTest" />
-      <option name="METHOD_NAME" value="validateDropDownTest" />
+      <option name="MAIN_CLASS_NAME" value="pageTests.NestedFramesTest" />
+      <option name="METHOD_NAME" value="validateNestedFrames" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HoverTest.validateHoverTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="checkboxTest.validateCheckbox" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebAutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +139,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pageTests" />
-      <option name="MAIN_CLASS_NAME" value="pageTests.HoverTest" />
-      <option name="METHOD_NAME" value="validateHoverTest" />
+      <option name="MAIN_CLASS_NAME" value="pageTests.checkboxTest" />
+      <option name="METHOD_NAME" value="validateCheckbox" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.JavaScriptAlertsTest.validateJavaScriptAlerts" />
+        <item itemvalue="TestNG.NestedFramesTest.validateNestedFrames" />
+        <item itemvalue="TestNG.MultipleWindowsTest.validateMultipleWindowsHandle" />
+        <item itemvalue="TestNG.checkboxTest.validateCheckbox" />
         <item itemvalue="TestNG.AddRemoveElementTest.validateAddRemoveElement" />
-        <item itemvalue="TestNG.BasicAuthTest.valiudateBasicAuth" />
-        <item itemvalue="TestNG.DragAndDropTest.validateDragDropTest" />
-        <item itemvalue="TestNG.DropDownTest.validateDropDownTest" />
-        <item itemvalue="TestNG.HoverTest.validateHoverTest" />
       </list>
     </recent_temporary>
   </component>

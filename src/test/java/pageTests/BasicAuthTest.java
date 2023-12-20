@@ -15,7 +15,7 @@ public class BasicAuthTest extends TestUtilities {
         BasicAuthPage basicAuth=welcomePage.clickBasicAuthLink();
 
         basicAuth.loginWithBasicAuth();
-        Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"Congratulations! You must have the proper credentials.");
+        Assert.assertEquals(basicAuth.getHeader(),"Congratulations! You must have the proper credentials.");
 
     }
 }
