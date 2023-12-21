@@ -27,6 +27,8 @@ public class WelcomePage extends BasePageObject {
 
     private By jSAlertLinkLocator=By.linkText("JavaScript Alerts");
 
+    private By keyPressesLinkLocator=By.linkText("Key Presses");
+
 
 
 
@@ -81,6 +83,11 @@ public class WelcomePage extends BasePageObject {
     public JavaScriptAlertPage clickJavaScriptAlertsLink(){
         click(jSAlertLinkLocator);
         return new JavaScriptAlertPage(driver,log);
+    }
+
+    public KeyPressesPage clickKeyPressesLink(){
+        click(keyPressesLinkLocator);
+        return new KeyPressesPage(driver,log);
     }
 
 
